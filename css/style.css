@@ -1,0 +1,166 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+header, section, main, nav, footer, article, hgroup  {
+    display: block;
+    width: 100%;
+    
+} 
+
+body{
+    background-color: #B9AA87;
+}
+
+
+
+a{
+    text-decoration: none;
+    outline: none;
+    transition: .4s all ease-in-out;
+    
+}
+ul{
+    list-style: none;
+
+}
+
+.header-home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #170000;
+    color: white;
+    
+}
+
+.main-menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    border-bottom-style: solid ; 
+    border-color: #000000;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .5);
+}
+
+.menu-link-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.links-menu{
+    padding: 0 1rem;
+    line-height: 70px;
+    height: 70px;
+    display: block;
+    color: white;
+    transition: .6s all ease-in-out;
+    
+}
+
+.links-menu:hover{
+    box-shadow: 0 -5px 0 0 white inset;
+}
+
+.blog-btn{
+    font-weight: 700;
+    background-color: #643B47;
+    line-height: 40px;
+    height: 40px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .5);
+    transition: .4s all ease-in-out;
+}
+
+.blog-btn:hover{
+    transform: scale(.95);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    padding: 2rem 2rem;
+    min-height: 36vh; 
+
+}
+
+.inicio-container{
+    padding-top: 32px;
+}
+
+.list-inicio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.list-item{
+    padding: 16px;
+}
+
+.end-title-inicio{
+    padding-top: 16px;
+}
+
+.section-brews{
+   text-align: center;
+   padding-top: 40px;
+}
+
+.box-brew-type{
+    box-shadow: 0 10px 5px rgba(0, 0, 0, .54);
+    border-radius: 10px;
+    padding: 10px;
+    width: 25%;
+    
+}
+
+
+@media screen and (max-width: 1024px){
+
+    .main-menu{
+        justify-content: center;      
+        align-content: center;
+        text-align: center;
+        flex-wrap: nowrap;
+        font-size: 24px;
+          
+    }
+
+    .links-menu{
+        margin: 16px;       
+    }
+    .inicio-container{
+        padding-top: 60px;
+    }
+    .title-brews{
+        font-size: 40px;
+    }
+
+    .section-brews > .container{
+        flex-direction: column;
+    }
+
+    .title-brew-type{
+        font-size: 24px;
+    }
+    
+
+}
+
+
+
+
+
