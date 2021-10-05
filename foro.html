@@ -4,9 +4,117 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/foro.css">
+    <script src="js\modal.js"></script>
+    <script src="js\script.js"></script>      
+    
+    <title>Brewki foro</title>
 </head>
 <body>
+    
+    <header class="header-home">     
+       
+        <nav class="main-menu">
+            <h1 class="header-title">Brewki</h1>
+        
+           
+            
+            <ul class="menu-link-container">
+                
+                <li >
+                    <a class="links-menu" href="index.html">Inicio</a>
+                </li>
+                
+                <li  >
+                    <a class="links-menu blog-btn" href="#login">Iniciar sesion</a>
+                </li>        
+                
+                <li  >
+                    <a class="links-menu blog-btn" href="#register">Crear cuenta</a>
+                </li>
+                
+            </ul>
+        </nav>
+       
+                
+    </header>
+
+
+
+    
+        
+       
+    <div class="container" >
+        <h1 class="forum-main-title"> Publicaciones</h1>
+        
+        <button class="blog-btn" id="publication-btn" > Subir Publicacion </button>
+
+        
+        <div class="publication-container preview container" id="divPublications">
+            
+            <div class="publication ">
+                <h2 class="publication-title">Todo sobre como hacer un buen cafe</h2>
+               
+                
+                  
+                                       
+            </div>
+
+           
+            
+           
+
+          
+
+
+
+        </div>
+
+    </div>
+            
+            
+      
+        
+    
+    
+    
+
+
+
+
+ 
+
+    
+
+ <!--modal-->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="formulario">
+                <form action="">
+                    <label for="txtTitle"> 
+                        <input type="text" id="txtTitle" placeholder="Titulo">     
+                    </label>
+                                                   
+                    <label for="txtContent"> 
+                        <textarea placeholder="texto" id="txtContent"></textarea>
+                    </label>
+                    
+
+                    
+
+
+                    <input type="button" class="blog-btn post-btn" onclick="addProduct()" value="Publicar">
+                </form>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
     
 </body>
 </html>

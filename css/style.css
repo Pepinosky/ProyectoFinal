@@ -1,5 +1,7 @@
 
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,700&display=swap');@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:ital,wght@1,700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -13,6 +15,7 @@ header, section, main, nav, footer, article, hgroup  {
 
 body{
     background-color: #B9AA87;
+    font-family: 'Raleway', sans-serif;
 }
 
 
@@ -33,10 +36,12 @@ ul{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #170000;
+   
     color: white;
     
 }
+
+
 
 .main-menu{
     display: flex;
@@ -46,6 +51,7 @@ ul{
     top: 0;
     left: 0;
     z-index: 999;
+    background-color: #170000;
     border-bottom-style: solid ; 
     border-color: #000000;
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .5);
@@ -97,6 +103,7 @@ ul{
 }
 
 .inicio-container{
+    background-color: #170000;
     padding-top: 32px;
 }
 
