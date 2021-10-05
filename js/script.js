@@ -1,6 +1,6 @@
 var arrPublications = [];
 
-function addProduct() {
+function addPublication() {
     var title= document.getElementById("txtTitle").value;
     var content = document.getElementById("txtContent").value;
 
