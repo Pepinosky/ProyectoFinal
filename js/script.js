@@ -10,6 +10,7 @@ function addProduct() {
 
     arrPublications.push(objPublication);
     setPublication();
+    document.getElementById("myModal").style.display= "none"
 }
 
 function setPublication(){
@@ -18,7 +19,7 @@ function setPublication(){
     
     for(var i= 0; i < arrPublications.length; i++){
         var pTitle= document.createElement("h2");
-        var pContent= document.createElement("p");
+        var pContent= document.createElement("textarea");
         var div = document.createElement("div");
 
         pTitle.setAttribute("class", "publication-title");
@@ -26,6 +27,7 @@ function setPublication(){
 
        
         pContent.setAttribute("class", "publication-content");
+        pContent.setAttribute("readonly", "");
         pContent.innerHTML= arrPublications[i].content;
 
         div.setAttribute("class", "publication");
@@ -35,4 +37,10 @@ function setPublication(){
         divPublications.appendChild(div)
 
     }
+}
+
+
+function setbg(color)
+{
+document.getElementById("txtContent").style.background=color
 }

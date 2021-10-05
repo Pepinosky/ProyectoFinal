@@ -55,7 +55,9 @@
             
             <div class="publication ">
                 <h2 class="publication-title">Todo sobre como hacer un buen cafe</h2>
-               
+               <textarea readonly class="publication-content">
+                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, corporis quis ut mollitia quaerat dolorum nam, doloribus architecto voluptatem consectetur nesciunt obcaecati ipsam at omnis velit tempore, unde dolor. Labore.
+               </textarea>
                 
                   
                                        
@@ -98,14 +100,14 @@
                     </label>
                                                    
                     <label for="txtContent"> 
-                        <textarea placeholder="texto" id="txtContent"></textarea>
+                        <textarea placeholder="texto" id="txtContent" onfocus="setbg('#BDA5AB')" onblur="setbg('white')" ></textarea>
                     </label>
                     
 
                     
 
 
-                    <input type="button" class="blog-btn post-btn" onclick="addProduct()" value="Publicar">
+                    <input type="button" class="blog-btn post-btn" onclick="addProduct()" value="Publicar" id="btnSubmit">
                 </form>
 
 
